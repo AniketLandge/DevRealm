@@ -1,21 +1,17 @@
-import { headerStyle, navStyle, linkStyle } from "./Header.css";
+import { headerStyle, navStyle, linkStyle, brandName } from "./Header.css";
+import { NavLink } from "react-router-dom";
 export function Header() {
   return (
     <header className={headerStyle}>
-      <h1>DevRealm</h1>
+      <div className={brandName}>DevRealm</div>
       <nav className={navStyle}>
-        <a href="/" className={linkStyle}>
+        <NavLink to="/" className={linkStyle}>
           Home
-        </a>
-        <a href="/about" className={linkStyle}>
+        </NavLink>
+
+        <NavLink to="/about" className={linkStyle}>
           About
-        </a>
-        <a href="/projects" className={linkStyle}>
-          Projects
-        </a>
-        <a href="/contact" className={linkStyle}>
-          Contact
-        </a>
+        </NavLink>
       </nav>
     </header>
   );

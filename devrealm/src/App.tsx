@@ -1,17 +1,20 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Projects } from "./pages/Projects";
-import "@fontsource/oswald/400.css"; // Specify weight
+import About from "./pages/About";
+import { Layout } from "./components/Layout/Layout";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} /> */}
-          {/* <Route path="/projects" element={<Projects />} /> */}
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            {/* <Route path="/projects" element={<Projects />} /> */}
+            {/* <Route path="/contact" element={<Contact />} /> */}
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
