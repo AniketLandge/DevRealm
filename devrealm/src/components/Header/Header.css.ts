@@ -14,8 +14,10 @@ const headerStyle = style([
     justifyContent: "space-between",
     alignItems: "center",
     padding: "16px",
-    backgroundColor: "primary",
+    backgroundColor: "translucentBlack",
     color: "softRed",
+    borderRadius: "8px",
+    margin: "32px",
   }),
 ]);
 
@@ -37,6 +39,6 @@ const linkStyle = style({
   },
 });
 
-const brandName = style([sprinkles({ fontSize: "lg", fontWeight: "bold" })]);
+const brandName = style([sprinkles({ fontSize: "2xl", fontWeight: "bold" })]);
 
 export { headerStyle, navStyle, linkStyle, brandName };

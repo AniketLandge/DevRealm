@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export function Header() {
   return (
     <header className={headerStyle}>
-      <div className={brandName}>DevRealm</div>
+      <div className={brandName}>Aniket Landge</div>
       <nav className={navStyle}>
         <NavLink to="/" className={linkStyle}>
           Home

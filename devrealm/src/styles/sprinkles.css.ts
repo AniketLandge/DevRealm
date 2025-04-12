@@ -16,11 +16,7 @@ const responsiveProperties = defineProperties({
     marginRight: vars.size,
     width: vars.size,
     height: vars.size,
-    fontSize: {
-      sm: "14px",
-      md: "16px",
-      lg: "18px",
-    },
+    fontSize: vars.fontSize,
     fontWeight: {
       normal: "400",
       bold: "700",
@@ -29,10 +25,15 @@ const responsiveProperties = defineProperties({
     display: ["block", "inline-block", "flex", "none"],
     alignItems: ["center", "flex-start", "flex-end"],
     justifyContent: ["center", "space-between", "flex-start", "flex-end"],
+    justifySelf: ["center", "flex-start", "flex-end"],
+
     gap: vars.spacing,
     borderRadius: vars.size,
     backgroundColor: vars.colors,
     color: vars.colors,
+    position: ["relative", "absolute", "fixed"],
+    overflow: ["hidden", "visible"],
+    overflowY: ["auto", "scroll", "hidden", "visible"],
   },
 });
 
